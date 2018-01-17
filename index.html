@@ -10,7 +10,7 @@
 </head>
   <style>
     h1 {
-      font-size: 24pt;
+      font-size: 45px;
       background-color: paleturquoise;
       padding: 20px;
       
@@ -33,21 +33,28 @@
 }
 
 /* Style the topnav links */
-.topnav a {
+    .topnav a {
     float: left;
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
+    }
 
 /* Change color on hover */
-.topnav a:hover {
+    .topnav a:hover {
     background-color: lightblue;
     color: black;
-}
-  </style>
+    }
+/* styled legend */
+
+    legend {
+      color: darkcyan;
+      font-family: monospace;
+      font-size: 16px;
+    }
+    </style>
   
   <body>
     <div class="container">
@@ -56,11 +63,12 @@
     </div>
     </div>
     <div class="topnav">
-  <a href="#">Home</a>
-  <a href="#">Graphic Design</a>
-  <a href="#">Web Coding</a>
-</div>
+      <a href="#">Home</a>
+      <a href="#">Graphic Design</a>
+      <a href="#">Web Coding</a>
+    </div>
     <br>
+    
     <label>Take me to:
       <select name="Introduction Info">
         <option value="">Please select</option>
@@ -69,9 +77,38 @@
         <option value="Intro to Bootstrap">Intro to Bootstrap</option>
       </select>
     </label>
-      <p>Prior to the responsiveness of modern frameworks, people explored the vast open webscape without an expandable net. Imagine a time when surfing the web required a magnifying glass, multiple scroll bars, and patience the size of Texas.</p>
-      
-    <form action="/action_page.php" target="_blank" method="GET">
+    
+    <hr>
+    
+    <h2>Intro to Responsive Design</h2>
+    <br>
+      <p>Prior to the responsiveness of modern frameworks, people explored the vast open webscape without an expandable net. Imagine a time when surfing the web required a magnifying glass, multiple scroll bars, and patience the size of, well, the web itself.</p>
+      <p>This is where Responsive Web Design (RWD) comes in.  RWD has allowed us to rocket forward in design for the web. Due to the ever changing demands on websites, and the continuous size changes of viewing devices, it has become necessary to create websites that can be viewed across multiple platforms.  Rather than building new website for each device, as was often the case before RWD, there have been new developments that combine JavaScript and CSS with HTML to allow for cross-platform viewing. </p>
+    <p>So what are the building blocks of a responsive web design?  Amongst other things it consists of a mix of flexible grids, layouts, and smart use of CSS media queries.  These are exciting times for both web developers and graphic designers.  It allows each component to be well thought out, and vastly increases the amount of dynamic, creative, and intelligent websites.</p>
+    <legend>
+    Please enter your first and last name:
+    </legend>
+   <form action="/action_page.php">
+    First: <input type="text" name="First" required>
+    Last: <input type="text"
+    name="Last" required>
+     <input type="submit">
+    </form>
+    <br>
+    
+    <legend>
+    Would you like your website to be viewable across devices?
+    </legend>
+      <label>Yes
+        <input type="radio" name ="multiple devices" value="yes">
+      </label>
+      <label>No
+        <input type="radio" name ="multiple devices" value="no">
+      </label>    
+      <br>
+      <br>
+      <form action="/action_page.php" target="_blank" method="GET">
+        
     <label>
       Have any suggestions for the site?
       <br>
@@ -83,12 +120,11 @@
       <input type="submit" value="Submit">
       <br>
       <br>
-      <p>email us
+      <p>or email us
     <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
       </p>
       </form>
-  </div>
-    
+  
   </body>   
 </html>
     
