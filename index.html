@@ -11,26 +11,56 @@
   <style>
     h1 {
       font-size: 24pt;
-      background-color: lightblue;
       background-color: paleturquoise;
+      padding: 20px;
+      
     }
     body {
       background-color: azure;
       color: darkcyan;
+      padding-left: 35px;
+      font-family: serif;
+      font-size: 16px;
     }
     label {
       font-family: monospace;
     }
+    
+    .topnav {
+    overflow: hidden;
+    background-color: lightgoldenrodyellow;
+    font-family: monospace;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: lightblue;
+    color: black;
+}
   </style>
   
   <body>
     <div class="container">
     <div class="page-header">
-    <div style="background-color: lightblue">
       <h1>Expand and Contract: The Importance of Responsive Web Design</h1>
     </div>
     </div>
-      
+    <div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">Graphic Design</a>
+  <a href="#">Web Coding</a>
+</div>
+    <br>
     <label>Take me to:
       <select name="Introduction Info">
         <option value="">Please select</option>
@@ -39,7 +69,7 @@
         <option value="Intro to Bootstrap">Intro to Bootstrap</option>
       </select>
     </label>
-      <p>Prior to the responsiveness of modern frameworks, people explored the vast open webscape. Imagine a time when surfing the net required a magnifying glass, multiple scroll bars, and patience the size of Texas.</p>
+      <p>Prior to the responsiveness of modern frameworks, people explored the vast open webscape without an expandable net. Imagine a time when surfing the web required a magnifying glass, multiple scroll bars, and patience the size of Texas.</p>
       
     <form action="/action_page.php" target="_blank" method="GET">
     <label>
@@ -48,6 +78,7 @@
       <textarea name="E-mail Us" cols="25" rows="5">
         </textarea>
     </label>
+      
       <br>
       <input type="submit" value="Submit">
       <br>
@@ -55,7 +86,7 @@
       <p>email us
     <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
       </p>
-      
+      </form>
   </div>
     
   </body>   
